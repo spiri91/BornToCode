@@ -10,9 +10,8 @@ namespace BornToCode.App_Start
         public static void Register(HttpConfiguration config)
         {
             // New code:
-            ODataModelBuilder builder = new ODataConventionModelBuilder();
+            ODataModelBuilder builder = new ODataConventionModelBuilder().EnableLowerCamelCase();
             builder.EntitySet<Article>("articles");
-
             config.MapODataServiceRoute("ODataRoute", "odata", builder.GetEdmModel());
         }
     }

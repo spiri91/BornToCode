@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
@@ -25,16 +24,12 @@ namespace BornToCode.Controllers
         }
 
         [EnableQuery]
-        public IQueryable<Article> Get()
-        {
-            var articles = new List<Article> { new Article(Guid.NewGuid(), "title", "content") };
-            return articles.AsQueryable();
-        }
+        public IQueryable<Article> Get() => articlesRepository.Query().ToList().AsQueryable();
 
         [EnableQuery]
         public SingleResult<Article> Get([FromODataUri] Guid key)
         {
-            var article = articlesRepository.Query().Where(x => x.Id == key);
+            var article = articlesRepository.Query().Where(x => x.Id == key).ToList();
 
             return SingleResult.Create(article.AsQueryable());
         }
@@ -61,6 +56,8 @@ namespace BornToCode.Controllers
             if (key != update.Id)
                 return BadRequest();
 
+            articlesRepository.Put(update);
+
             SaveChanges();
 
             return Updated(update);
@@ -79,9 +76,6 @@ namespace BornToCode.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        private void SaveChanges()
-        {
-            unitOfWork.SaveState(articlesRepository);
-        }
+        private void SaveChanges() => unitOfWork.SaveState(articlesRepository);
     }
 }

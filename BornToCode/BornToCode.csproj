@@ -246,12 +246,19 @@
     <Compile Include="Core\Contracts\IRepository.cs" />
     <Compile Include="Core\Contracts\IUnitOfWork.cs" />
     <Compile Include="Core\UnitOfWork.cs" />
+    <Compile Include="DataBaseFunctions\DbFunctions.cs" />
+    <Compile Include="DataBaseFunctions\DebugTestDataSeed.cs" />
+    <Compile Include="DataBaseFunctions\ReleaseSeed.cs" />
     <Compile Include="ExceptionHandling\CustomExceptionHandling.cs" />
     <Compile Include="ExceptionHandling\Exceptions\ErrorTypes.cs" />
     <Compile Include="ExceptionHandling\Exceptions\NotAuthorized.cs" />
     <Compile Include="ExceptionHandling\Exceptions\NotFound.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706021435388_Initial.cs" />
+    <Compile Include="Migrations\201706021435388_Initial.Designer.cs">
+      <DependentUpon>201706021435388_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -293,7 +300,11 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706021435388_Initial.resx">
+      <DependentUpon>201706021435388_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

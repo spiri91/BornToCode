@@ -1,4 +1,5 @@
 using System.Data.Entity.Migrations;
+using BornToCode.DataBaseFunctions;
 
 namespace BornToCode.Migrations
 {
@@ -11,18 +12,14 @@ namespace BornToCode.Migrations
 
         protected override void Seed(BornToCodeContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            DbActions dbActions;
+#if DEBUG
+            dbActions = new DebugTestDataSeed(context);
+#else
+            dbActions = new ReleaseSeed(context);
+#endif
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            dbActions.Seed();
         }
     }
 }

@@ -6,13 +6,15 @@ namespace BornToCodeModels
     public class Article
     {
         [Key]
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
 
         public string Title { get; set; }
 
         public string Content { get; set; }
 
-        public DateTime DatePublished { get; private set; }
+        public DateTime DatePublished { get; set; }
+
+        public Article() { }
 
         public Article(Guid id, string title, string content)
         {

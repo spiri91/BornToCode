@@ -5,14 +5,10 @@ namespace BornToCode.Core
 {
     public class CheckToken : IAutorize
     {
-        public bool TokenIsValid(string token)
-        {
-            return token == GetValidToken();
-        }
+        private string TokenPropName = "token";
 
-        private string GetValidToken()
-        {
-            return ConfigurationManager.AppSettings["token"];
-        }
+        public bool TokenIsValid(string token) => token == GetValidToken();
+
+        private string GetValidToken() => ConfigurationManager.AppSettings[TokenPropName];
     }
 }

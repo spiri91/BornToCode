@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using BornToCode.Core.Contracts;
-using BornToCode.ExceptionHandling.Exceptions;
 using BornToCodeModels;
 
 namespace BornToCode.Articles
@@ -14,54 +12,20 @@ namespace BornToCode.Articles
 
         public ArticlesRepository() : this(new BornToCodeContext()) { }
 
-        public ArticlesRepository(BornToCodeContext context)
-        {
-            this.context = context;
-        }
+        public ArticlesRepository(BornToCodeContext context) { this.context = context; }
 
-        public void Put(Article entity)
-        {
-            CheckIfExists(entity.Id);
-            context.Entry(entity).State = EntityState.Modified;
-        }
-
+        public void Put(Article entity) => context.Set<Article>().AddOrUpdate(entity);
        
-        public void Add(Article entity)
-        {
-            context.Articles.Add(entity);
-        }
+        public void Add(Article entity) => context.Articles.Add(entity);
 
-        public void Delete(Article entity)
-        {
-            context.Articles.Remove(entity);
-        }
+        public void Delete(Article entity) => context.Articles.Remove(entity);
 
-        public List<Article> FetchAll()
-        {
-            return context.Articles.ToList();
-        }
+        public List<Article> FetchAll() => context.Articles.ToList();
 
-        public IQueryable<Article> Query()
-        {
-            return context.Articles;
-        }
+        public IQueryable<Article> Query() => context.Articles;
 
-        public async void Save()
-        {
-            await context.SaveChangesAsync();
-        }
-
-        private void CheckIfExists(Guid id)
-        {
-            var entity = context.Articles.SingleOrDefault(x => x.Id == id);
-
-            if(entity == null)
-                throw new NotFound();
-        }
-
-        ~ArticlesRepository()
-        {
-            context.Dispose();
-        }
+        public void Save() => context.SaveChanges();
+        
+        ~ArticlesRepository() { context.Dispose(); }
     }
 }

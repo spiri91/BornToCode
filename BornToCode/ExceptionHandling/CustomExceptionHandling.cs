@@ -16,6 +16,7 @@ namespace BornToCode.ExceptionHandling
         public override Task OnExceptionAsync(HttpActionExecutedContext context, CancellationToken cancellationToken)
         {
             CheckExceptionMessage(context.Exception.Message);
+
             return Task.FromResult<object>(null);
         }
 
