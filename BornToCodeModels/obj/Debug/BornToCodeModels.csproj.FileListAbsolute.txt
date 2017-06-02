@@ -1,0 +1,10 @@
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\bin\Debug\BornToCodeModels.dll
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\bin\Debug\BornToCodeModels.pdb
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\obj\Debug\BornToCodeModels.csprojResolveAssemblyReference.cache
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\obj\Debug\BornToCodeModels.dll
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\obj\Debug\BornToCodeModels.pdb
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\bin\Debug\BornToCodeModels.dll.config
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\bin\Debug\EntityFramework.dll
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\bin\Debug\EntityFramework.xml
+c:\users\spirica\documents\visual studio 2015\Projects\BornToCode\BornToCodeModels\bin\Debug\EntityFramework.SqlServer.xml
