@@ -21,11 +21,12 @@ namespace BornToCodeTests.UnitTests
         public void ShouldPutNewArticle()
         {
             var articleToPut = AddArticle();
+            articleToPut.Content = "TestContent2";
             sut.Put(articleToPut);
             sut.Save();
             var returnedArticle = ReturnedArticle(articleToPut);
 
-            Assert.IsTrue(articleToPut == returnedArticle);
+            Assert.IsTrue(articleToPut.Id == returnedArticle.Id);
         }
 
         [Test]

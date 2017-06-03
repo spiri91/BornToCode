@@ -6,7 +6,7 @@ using System.Web.Http.Filters;
 
 namespace BornToCode.ExceptionHandling
 {
-    class CustomExceptionHandling : ExceptionFilterAttribute
+    public class CustomExceptionHandling : ExceptionFilterAttribute
     {
         public override void OnException(HttpActionExecutedContext context)
         {

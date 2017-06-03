@@ -20,6 +20,7 @@ namespace BornToCodeTests.Core
         {
             Dbts.DeleteAll();
             Dbts.Seed();
+            Context.SaveChanges();
         }
 
         [TearDown]

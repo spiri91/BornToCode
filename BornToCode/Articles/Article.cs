@@ -36,18 +36,18 @@ namespace BornToCodeModels
 
         private void CheckForNull(string[] parameters)
         {
-            if (parameters.Any(value => string.IsNullOrWhiteSpace(value)))
+            if (parameters.Any(string.IsNullOrWhiteSpace))
                 throw new BadFormat();
         }
 
-        public static bool operator == (Article a, Article b)
-        {
-            return a.Id == b.Id && a.Title == b.Title && a.Content == b.Content;
-        }
+        //public static bool operator == (Article a, Article b)
+        //{
+        //    return a.Id == b.Id && a.Title == b.Title && a.Content == b.Content;
+        //}
 
-        public static bool operator != (Article a, Article b)
-        {
-            return a.Id != b.Id || a.Title != b.Title || a.Content != b.Content;
-        }
+        //public static bool operator != (Article a, Article b)
+        //{
+        //    return a.Id != b.Id || a.Title != b.Title || a.Content != b.Content;
+        //}
     }
 }
