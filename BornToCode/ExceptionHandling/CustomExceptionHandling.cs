@@ -30,6 +30,9 @@ namespace BornToCode.ExceptionHandling
                 case "ObjectNotFound":
                     throw new HttpResponseException(HttpStatusCode.NotFound);
 
+                case "BadFormat":
+                    throw new HttpResponseException(HttpStatusCode.BadRequest);
+
                 default:
                     throw new HttpResponseException(HttpStatusCode.InternalServerError);
             }

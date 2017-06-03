@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.OData;
 using BornToCode.Authorizaion;
@@ -35,7 +34,7 @@ namespace BornToCode.Controllers
         }
 
         [CustomAuthorize]
-        public async Task<IHttpActionResult> Post(Article article)
+        public IHttpActionResult Post(Article article)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -48,7 +47,7 @@ namespace BornToCode.Controllers
         }
 
         [CustomAuthorize]
-        public async Task<IHttpActionResult> Put([FromODataUri] Guid key, Article update)
+        public IHttpActionResult Put([FromODataUri] Guid key, Article update)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -64,7 +63,7 @@ namespace BornToCode.Controllers
         }
 
         [CustomAuthorize]
-        public async Task<IHttpActionResult> Delete([FromODataUri] Guid key)
+        public IHttpActionResult Delete([FromODataUri] Guid key)
         {
             var entityToDelete = articlesRepository.Query().SingleOrDefault(x => x.Id == key);
             if (entityToDelete == null)

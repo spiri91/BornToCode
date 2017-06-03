@@ -174,3 +174,13 @@ F:\BornToCode\BornToCodeTests\bin\Debug\zh-Hant\Microsoft.Spatial.resources.dll
 F:\BornToCode\BornToCodeTests\obj\Debug\BornToCodeTests.csprojResolveAssemblyReference.cache
 F:\BornToCode\BornToCodeTests\obj\Debug\BornToCodeTests.dll
 F:\BornToCode\BornToCodeTests\obj\Debug\BornToCodeTests.pdb
+F:\BornToCode\BornToCodeTests\bin\Debug\FluentAssertions.Core.dll
+F:\BornToCode\BornToCodeTests\bin\Debug\FluentAssertions.dll
+F:\BornToCode\BornToCodeTests\bin\Debug\nunit.framework.dll
+F:\BornToCode\BornToCodeTests\bin\Debug\FluentAssertions.pdb
+F:\BornToCode\BornToCodeTests\bin\Debug\FluentAssertions.xml
+F:\BornToCode\BornToCodeTests\bin\Debug\FluentAssertions.Core.pdb
+F:\BornToCode\BornToCodeTests\bin\Debug\FluentAssertions.Core.xml
+F:\BornToCode\BornToCodeTests\bin\Debug\nunit.framework.xml
+F:\BornToCode\BornToCodeTests\bin\Debug\EntityFramework.SqlServer.dll
+F:\BornToCode\BornToCodeTests\bin\Debug\EntityFramework.SqlServer.xml

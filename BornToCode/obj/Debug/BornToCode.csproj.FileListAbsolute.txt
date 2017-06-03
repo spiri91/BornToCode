@@ -263,8 +263,8 @@ F:\BornToCode\BornToCode\bin\ko\System.Spatial.resources.dll
 F:\BornToCode\BornToCode\bin\ru\System.Spatial.resources.dll
 F:\BornToCode\BornToCode\bin\zh-Hans\System.Spatial.resources.dll
 F:\BornToCode\BornToCode\bin\zh-Hant\System.Spatial.resources.dll
-F:\BornToCode\BornToCode\obj\Debug\BornToCode.csprojResolveAssemblyReference.cache
-F:\BornToCode\BornToCode\obj\Debug\BornToCode.dll
-F:\BornToCode\BornToCode\obj\Debug\BornToCode.pdb
 F:\BornToCode\BornToCode\obj\Debug\BornToCode.Migrations.Initial.resources
 F:\BornToCode\BornToCode\obj\Debug\BornToCode.csproj.GenerateResource.Cache
+F:\BornToCode\BornToCode\obj\Debug\BornToCode.dll
+F:\BornToCode\BornToCode\obj\Debug\BornToCode.pdb
+F:\BornToCode\BornToCode\obj\Debug\BornToCode.csprojResolveAssemblyReference.cache

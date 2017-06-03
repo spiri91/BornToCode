@@ -4,6 +4,7 @@
     {
         NotAuthorized,
         ObjectNotFound,
+        BadFormat,
         InternalServerError
     }
 }

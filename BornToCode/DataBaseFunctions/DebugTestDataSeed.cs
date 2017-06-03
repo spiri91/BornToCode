@@ -19,6 +19,6 @@ namespace BornToCode.DataBaseFunctions
         }
 
         public override void DeleteAll()
-            => context.Database.SqlQuery<string>("DELETE FROM Articles");
+            => context.Database.ExecuteSqlCommand("TRUNCATE TABLE Articles");
     }
 }

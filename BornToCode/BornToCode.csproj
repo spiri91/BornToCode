@@ -250,6 +250,7 @@
     <Compile Include="DataBaseFunctions\DebugTestDataSeed.cs" />
     <Compile Include="DataBaseFunctions\ReleaseSeed.cs" />
     <Compile Include="ExceptionHandling\CustomExceptionHandling.cs" />
+    <Compile Include="ExceptionHandling\Exceptions\BadFormat.cs" />
     <Compile Include="ExceptionHandling\Exceptions\ErrorTypes.cs" />
     <Compile Include="ExceptionHandling\Exceptions\NotAuthorized.cs" />
     <Compile Include="ExceptionHandling\Exceptions\NotFound.cs" />
