@@ -9,8 +9,13 @@ namespace BornToCode
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute("Default", "{controller}/{action}/{id}", new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            routes.MapRoute("Default", "",
+                new { controller = "Home", action = "AllArticles", id = UrlParameter.Optional }
             );
+
+            //routes.MapRoute("Default", "{controller}/{action}/{id}",
+            //    new { controller = "Home", action = "AllArticlesIndex", id = "" }
+            //);
         }
     }
 }
