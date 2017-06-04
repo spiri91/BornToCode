@@ -1,31 +1,37 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Born to code! </title>
+    <meta charset="utf-8" />
+    <link href="~/Scripts/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/Scripts/angular/material/angular-material.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+    <script src="~/Scripts/jquery/jquery-3.1.1.js"></script>
+    <script src="~/Scripts/bootstrap/bootstrap.js"></script>
+    <script src="~/Scripts/angular/base/angular.js"></script>
+    <script src="~/Scripts/moment/moment.js"></script>
+    <script src="~/Scripts/angular/material/angular-animate.js"></script>
+    <script src="~/Scripts/angular/material/angular-aria.js"></script>
+    <script src="~/Scripts/angular/material/angular-material.js"></script>
+    <script src="~/Scripts/angular/route/angular-route.js"></script>    
+    <script src="~/Site/Core/guid.js"></script>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+
+    <script src="~/Site/app.js"></script>
+    <script src="~/Site/routing.js"></script>
+    <script src="~/Site/Core/Services/messageService.js"></script>
+    <script src="~/Site/Core/Services/articlesRepository.js"></script>
+    <script src="~/Site/Articles/articlesController.js"></script>
+</head>
+<body ng-app="bornToCode">
+<div ng-include="'Site/SmallParts/Navbar.html'"></div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-2"></div>
+        <div class="col-xs-12 col-sm-8">
+            <div ng-view></div>
+        </div>
+        <div class="col-xs-0 col-sm-2"></div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</body>
+</html>
