@@ -11,6 +11,7 @@ namespace BornToCode.App_Start
         {
             // New code:
             ODataModelBuilder builder = new ODataConventionModelBuilder().EnableLowerCamelCase();
+            config.Filter().Expand().Select().OrderBy().MaxTop(null).Count();
             builder.EntitySet<Article>("articles");
             config.MapODataServiceRoute("ODataRoute", "odata", builder.GetEdmModel());
         }

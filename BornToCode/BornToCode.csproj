@@ -350,6 +350,7 @@
     <Content Include="Scripts\moment\moment.js" />
     <Content Include="Scripts\moment\moment.min.js" />
     <Content Include="Site\Core\Services\articlesRepository.js" />
+    <Content Include="Site\Core\Services\localStorageService.js" />
     <Content Include="Site\Core\Services\messageService.js" />
     <Content Include="Site\SmallParts\About.html" />
     <Content Include="Site\app.js" />

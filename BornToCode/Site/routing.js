@@ -7,14 +7,14 @@ app.config(($routeProvider) => {
         })
         .when('/writeNew', {
             templateUrl: '',
-            controller: '',
+            controller: ''
         })
-        .when('/:id', {
-            templateUrl: '',
-            controller: '',
+        .when('/:title', {
+            templateUrl: 'Site/Article/Article.html',
+            controller: 'articleController'
         })
         .when('/edit/:id', {
             templateUrl: '',
-            controller: '',
+            controller: ''
         });
 });

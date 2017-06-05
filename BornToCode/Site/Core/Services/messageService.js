@@ -8,7 +8,7 @@ function messageService($http) {
 
     this._GET = (address) => {
         return $http.get(address);
-    }
+    };
 
     return this;
 }
