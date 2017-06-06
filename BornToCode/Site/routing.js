@@ -5,16 +5,16 @@ app.config(($routeProvider) => {
             templateUrl: "Site/Articles/Articles.html",
             controller: 'articlesController'
         })
-        .when('/writeNew', {
-            templateUrl: '',
-            controller: ''
+        .when('/article/:id?', {
+            templateUrl: 'Site/NewOrEdit/NewOrEdit.html',
+            controller: 'newOrEditController'
         })
         .when('/:title', {
             templateUrl: 'Site/Article/Article.html',
             controller: 'articleController'
         })
-        .when('/edit/:id', {
-            templateUrl: '',
-            controller: ''
+        .otherwise({
+            templateUrl: "Site/Articles/Articles.html",
+            controller: 'articlesController'
         });
 });

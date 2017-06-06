@@ -29,8 +29,13 @@ namespace BornToCode.Authorizaion
             return Task.FromResult<object>(null);
         }
 
-        private string GetAuthorizationHeader(HttpActionContext context) =>
-            context.Request.Headers.Authorization.Scheme;
+        private string GetAuthorizationHeader(HttpActionContext context)
+        {
+            if (context.Request.Headers.Authorization == null)
+                throw new NotAuthorized();
+
+            return context.Request.Headers.Authorization.Scheme;
+        }
 
         private void Check(string token)
         {

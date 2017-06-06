@@ -1,2 +1,2 @@
 ﻿/// <reference path="defaultScripts.js" />
-var app = angular.module("bornToCode", ['ngMaterial', 'ngRoute']);
+var app = angular.module("bornToCode", ['ngMaterial', 'ngRoute', 'textAngular']);

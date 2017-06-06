@@ -16,7 +16,7 @@ namespace BornToCodeModels
 
         public DateTime DatePublished { get; set; }
 
-        protected Article() { }
+        public Article() { }
 
         public Article(Guid id, string title, string content)
         {

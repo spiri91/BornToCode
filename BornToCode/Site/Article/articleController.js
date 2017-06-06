@@ -7,7 +7,7 @@ function articleController($scope, $routeParams, articlesRepository) {
     function init() {
         let selectedArticle = localStorageService.getSelectedArticle();
         if (!selectedArticle)
-            articlesRepository._GetArticles("?$filter=title eq '" + $routeParams.title + "'")
+            articlesRepository._GetArticlesByQuery("?$filter=title eq '" + $routeParams.title + "'")
                 .then((response) => {
                     $scope.article = response.data.value[0];
                 });
