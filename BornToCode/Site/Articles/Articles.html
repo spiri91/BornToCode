@@ -1,9 +1,13 @@
-﻿<div class="row"></div>
+﻿<link href="../../Content/Articles/articles.css" rel="stylesheet" />
+<div class="row">
+    <h3><strong class="main-title">Programming made easy</strong></h3>
+</div>
 <div class="col-xs-12">
     <div ng-repeat="article in articles | orderBy: '-datePublished'">
         <div class="article" ng-click="onSelectedArticle(article)">
             <h3 class="articleTitle">{{article.title}}</h3>
             <p class="articleContent">{{article.resume}}</p>
         </div>
+        <hr/>
     </div>
 </div>

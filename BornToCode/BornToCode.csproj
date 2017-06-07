@@ -293,12 +293,14 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Content\Articles\articles.css" />
     <Content Include="Content\Article\article.css" />
     <Content Include="Content\Core\Css\generalColors.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\NewOrEdit\newOrEdit.css" />
     <Content Include="Content\SmallParts\navbar.css" />
+    <Content Include="favico.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="gulpfile.js" />
     <Content Include="Scripts\angular\material\angular-material.css" />
@@ -363,6 +365,7 @@
     <Content Include="Scripts\textAngular\textAngular.min.js" />
     <Content Include="Scripts\textAngular\textAngular.umd.js" />
     <Content Include="Scripts\textAngular\textAngularSetup.js" />
+    <None Include="Site\Articles\articles.less" />
     <Content Include="Site\Core\Services\articlesRepository.js" />
     <Content Include="Site\Core\Services\localStorageService.js" />
     <Content Include="Site\Core\Services\messageService.js" />
