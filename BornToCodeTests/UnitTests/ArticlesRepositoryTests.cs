@@ -69,7 +69,7 @@ namespace BornToCodeTests.UnitTests
         {
             Assert.Throws(Is.InstanceOf<Exception>(), () =>
             {
-                var invalidArticle = new Article(Guid.Empty, "", "");
+                var invalidArticle = new Article(Guid.Empty, "", "", "");
                 sut.Add(invalidArticle);
             });
         }
@@ -79,7 +79,7 @@ namespace BornToCodeTests.UnitTests
         {
             Assert.Throws(Is.InstanceOf<Exception>(), () =>
             {
-                var invalidArticle = new Article(Guid.Empty, "", "");
+                var invalidArticle = new Article(Guid.Empty, "", "", "");
                 sut.Add(invalidArticle);
             });
         }

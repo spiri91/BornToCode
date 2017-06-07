@@ -14,7 +14,7 @@ namespace BornToCode.DataBaseFunctions
         {
             Enumerable.Range(1, 50).ToList().ForEach(x =>
             {
-                context.Articles.Add(new Article(Guid.NewGuid(), "title" + x, "content" + x));
+                context.Articles.Add(new Article(Guid.NewGuid(), "title" + x, "resume", "content" + x));
             });
         }
 

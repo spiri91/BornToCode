@@ -3,7 +3,7 @@
     <div ng-repeat="article in articles | orderBy: '-datePublished'">
         <div class="article" ng-click="onSelectedArticle(article)">
             <h3 class="articleTitle">{{article.title}}</h3>
-            <p class="articleContent">{{article.content}}</p>
+            <p class="articleContent">{{article.resume}}</p>
         </div>
     </div>
 </div>

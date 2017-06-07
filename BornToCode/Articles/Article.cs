@@ -12,17 +12,20 @@ namespace BornToCodeModels
 
         public string Title { get; set; }
 
+        public string Resume { get; set; }
+
         public string Content { get; set; }
 
         public DateTime DatePublished { get; set; }
 
         public Article() { }
 
-        public Article(Guid id, string title, string content)
+        public Article(Guid id, string title,string resume, string content)
         {
             CheckForEmptyGuid(id);
-            CheckForNull(new[] { title, content });
+            CheckForNull(new[] { title, resume, content });
             Id = id;
+            Resume = resume;
             Title = title;
             Content = content;
             DatePublished = DateTime.Now;

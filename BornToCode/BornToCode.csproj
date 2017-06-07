@@ -263,6 +263,10 @@
     <Compile Include="Migrations\201706021435388_Initial.Designer.cs">
       <DependentUpon>201706021435388_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706070406174_addedResumeOnArticle.cs" />
+    <Compile Include="Migrations\201706070406174_addedResumeOnArticle.Designer.cs">
+      <DependentUpon>201706070406174_addedResumeOnArticle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -289,6 +293,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Content\Article\article.css" />
     <Content Include="Content\Core\Css\generalColors.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
@@ -385,10 +390,14 @@
     <Content Include="Site\Core\Css\generalColors.less" />
     <Content Include="Site\SmallParts\navbar.less" />
     <Content Include="Site\NewOrEdit\newOrEdit.less" />
+    <Content Include="Site\Article\article.less" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201706021435388_Initial.resx">
       <DependentUpon>201706021435388_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706070406174_addedResumeOnArticle.resx">
+      <DependentUpon>201706070406174_addedResumeOnArticle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1,7 +1,10 @@
-﻿<div class="row">
+﻿<link href="../../Content/Article/article.css" rel="stylesheet" />
+<div class="row">    
     <div class="col-xs-12">
-        <h2>{{article.title}}</h2>
+        <h2 class="article-title">{{article.title}}</h2>
     </div>
     <br/>
-    <div class="col-xs-12">{{article.content}}</div>
+    <div class="col-xs-12">
+        <div ng-bind-html="article.content"></div>
+    </div>
 </div>

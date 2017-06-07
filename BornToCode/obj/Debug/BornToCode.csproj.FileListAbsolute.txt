@@ -268,3 +268,4 @@ F:\BornToCode\BornToCode\obj\Debug\BornToCode.csproj.GenerateResource.Cache
 F:\BornToCode\BornToCode\obj\Debug\BornToCode.dll
 F:\BornToCode\BornToCode\obj\Debug\BornToCode.pdb
 F:\BornToCode\BornToCode\obj\Debug\BornToCode.csprojResolveAssemblyReference.cache
+F:\BornToCode\BornToCode\obj\Debug\BornToCode.Migrations.addedResumeOnArticle.resources

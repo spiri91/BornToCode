@@ -5,12 +5,12 @@
 app.controller('articlesController', ['$scope', '$location', 'articlesRepository', articlesController]);
 
 function articlesController($scope, $location, articlesRepository) {
-    articlesRepository._GetArticles().then((result) => {
+    var query = '?$select=id,resume,title,datePublished';
+    articlesRepository._GetArticlesByQuery(query).then((result) => {
         $scope.articles = result.data.value;
     });
 
     $scope.onSelectedArticle = (article) => {
-        localStorageService.rememberArticle(article);
         let articleAddress = '/' + article.title;
         $location.path(articleAddress);
     };

@@ -88,7 +88,7 @@ namespace BornToCodeTests.UnitTests
         [Test]
         public void ShouldThrowErrorOnPostingInvalidArticle()
         {
-            Assert.Throws<BadFormat>(() => sut.Post(new Article(Guid.Empty, "", "")));
+            Assert.Throws<BadFormat>(() => sut.Post(new Article(Guid.Empty, "", "", "")));
         }
 
         [Test]
