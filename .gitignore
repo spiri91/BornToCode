@@ -1,2 +1,6 @@
 bin/
 node_modules/
+obj/
+packages/
+Web.config
+BornToCode/Web.config

@@ -188,3 +188,5 @@ F:\BornToCode\BornToCodeTests\bin\Debug\Castle.Core.dll
 F:\BornToCode\BornToCodeTests\bin\Debug\Moq.dll
 F:\BornToCode\BornToCodeTests\bin\Debug\Castle.Core.xml
 F:\BornToCode\BornToCodeTests\bin\Debug\Moq.xml
+F:\BornToCode\BornToCodeTests\bin\Debug\WebDriver.dll
+F:\BornToCode\BornToCodeTests\bin\Debug\WebDriver.xml

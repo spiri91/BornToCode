@@ -12,6 +12,7 @@ using NUnit.Framework;
 
 namespace BornToCodeTests.UnitTests
 {
+    [TestFixture]
     class ArticlesControllerTests
     {
         private Mock<IRepository<Article>> repositoryMock;
