@@ -6,6 +6,7 @@
   transition-duration: 0.5s;
   border-radius: 5px;
   padding-left: 10px;
+  border: 1px solid white;
 }
 .article:hover {
   background-color: lavender;
@@ -14,6 +15,6 @@
   -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  border: 1px solid darkred;
+  border: 1px solid black;
   border-radius: 5px;
 }

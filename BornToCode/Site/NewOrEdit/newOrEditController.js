@@ -11,7 +11,7 @@ function newOrEditController($scope, $routeParams, articlesRepository) {
             return;
 
         articlesRepository._GetSingleArticle($routeParams.id).then((result) => {
-            $scope.article = result;
+            $scope.article = result.data;
         });
     }
 
