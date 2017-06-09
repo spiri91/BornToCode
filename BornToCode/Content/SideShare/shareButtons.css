@@ -1,0 +1,9 @@
+﻿.side_share_panel {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+}
+
+.side_share_panel a {
+    margin-bottom: 10px;
+}

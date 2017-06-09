@@ -299,6 +299,8 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\NewOrEdit\newOrEdit.css" />
+    <Content Include="Content\SideShare\share.js" />
+    <Content Include="Content\SideShare\shareButtons.css" />
     <Content Include="Content\SmallParts\navbar.css" />
     <Content Include="favico.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
