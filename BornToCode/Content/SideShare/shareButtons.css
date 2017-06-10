@@ -20,8 +20,10 @@
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-    margin-top: -190px;
-    margin-left: -22px;
+    margin-top: -215px;
+    margin-left: -20px;
+    width: 180px;
+    height: 54px;
 }
 
 .share-image-container {

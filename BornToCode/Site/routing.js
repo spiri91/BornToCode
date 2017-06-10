@@ -1,5 +1,5 @@
 ﻿/// <reference path="app.js" />
-app.config(($routeProvider) => {
+app.config(($routeProvider, $locationProvider) => {
     $routeProvider
         .when('/', {
             templateUrl: "Site/Articles/Articles.html",
@@ -17,4 +17,6 @@ app.config(($routeProvider) => {
             templateUrl: "Site/Articles/Articles.html",
             controller: 'articlesController'
         });
+
+    $locationProvider.html5Mode(true);
 });
