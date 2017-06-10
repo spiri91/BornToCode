@@ -2,8 +2,29 @@
     position: fixed;
     top: 100px;
     left: 10px;
+    width: 100px;
+    line-height: 20px;
 }
 
-.side_share_panel a {
-    margin-bottom: 10px;
+    .side_share_panel a {
+        margin-bottom: 10px;
+    }
+
+    .side_share_panel div {
+        float: left;
+    }
+
+.share-image {
+    -webkit-transform: rotate(93deg);
+    -moz-transform: rotate(93deg);
+    -ms-transform: rotate(93deg);
+    -o-transform: rotate(93deg);
+    transform: rotate(93deg);
+    margin-top: -190px;
+    margin-left: -35px;
+}
+
+.share-image-container {
+    margin: 0px;
+    margin-left: -18px;
 }
