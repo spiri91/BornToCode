@@ -19,5 +19,9 @@ function articlesRepository(messageService) {
         return messageService._POST(odataArticlesAddress, article, token);
     };
 
+    this._Put = (token, article) => {
+        return messageService._PUT(odataArticlesAddress, token, article.id, article);
+    }
+
     return this;
 }

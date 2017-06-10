@@ -46,3 +46,6 @@ hr {
   letter-spacing: -2px;
   font-weight: bold;
 }
+.hvr-underline-from-left {
+  cursor: pointer;
+}
