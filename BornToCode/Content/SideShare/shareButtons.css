@@ -15,13 +15,13 @@
     }
 
 .share-image {
-    -webkit-transform: rotate(93deg);
-    -moz-transform: rotate(93deg);
-    -ms-transform: rotate(93deg);
-    -o-transform: rotate(93deg);
-    transform: rotate(93deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
     margin-top: -190px;
-    margin-left: -35px;
+    margin-left: -22px;
 }
 
 .share-image-container {
