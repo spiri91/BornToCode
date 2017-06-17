@@ -11,7 +11,7 @@ function articlesController($scope, $location, articlesRepository) {
     });
 
     $scope.onSelectedArticle = (article) => {
-        let articleAddress = '/' + article.title;
+        let articleAddress = '/' + encodeURIComponent(article.title);
         $location.path(articleAddress);
     };
 }
