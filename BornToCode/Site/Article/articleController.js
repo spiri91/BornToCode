@@ -7,6 +7,7 @@ function articleController($scope, $routeParams, articlesRepository) {
     function init() {
         articlesRepository._GetArticlesByQuery("?$filter=title eq '" + $routeParams.title + "'")
             .then((response) => {
+                window.loader.hide();
                 $scope.article = response.data.value[0];
             });
     }

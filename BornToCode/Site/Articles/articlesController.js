@@ -8,10 +8,12 @@ function articlesController($scope, $location, articlesRepository) {
     var query = '?$select=id,resume,title,datePublished';
     articlesRepository._GetArticlesByQuery(query).then((result) => {
         $scope.articles = result.data.value;
+        loader.hide();
     });
 
     $scope.onSelectedArticle = (article) => {
         let articleAddress = '/' + encodeURIComponent(article.title);
+        loader.show();
         $location.path(articleAddress);
     };
 }

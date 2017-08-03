@@ -7,6 +7,7 @@
     </div>
 </div>
 <div class="col-xs-12 articles-container">
+    
     <div ng-repeat="article in articles | orderBy: '-datePublished'" class="hvr-underline-from-left">
         <div class="article" ng-click="onSelectedArticle(article)">
             <h3 class="articleTitle">{{article.title}}</h3>
